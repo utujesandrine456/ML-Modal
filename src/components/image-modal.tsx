@@ -10,9 +10,6 @@ import { ThemedText } from '@/components/themed-text';
 import { Fonts, Spacing } from '@/constants/theme';
 import { useTheme } from '@/hooks/use-theme';
 
-// rounded-md is standard 6px
-const ROUNDED_MD = 6;
-
 export type ImageModalProps = {
   visible: boolean;
   onClose: () => void;
@@ -157,7 +154,7 @@ const styles = StyleSheet.create({
   card: {
     width: '100%',
     maxWidth: 440,
-    borderRadius: ROUNDED_MD,
+    borderRadius: '6px',
     borderWidth: 1,
     padding: Spacing.four,
     gap: Spacing.three,
@@ -180,7 +177,7 @@ const styles = StyleSheet.create({
   closeButton: {
     width: 28,
     height: 28,
-    borderRadius: ROUNDED_MD,
+    borderRadius: '6px',
     borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
@@ -193,14 +190,14 @@ const styles = StyleSheet.create({
   imageContainer: {
     width: '100%',
     height: 260,
-    borderRadius: ROUNDED_MD,
+    borderRadius: '6px',
     borderWidth: 1,
     overflow: 'hidden',
   },
   image: {
     width: '100%',
     height: '100%',
-    borderRadius: ROUNDED_MD,
+    borderRadius: '6px',
   },
   description: {
     fontFamily: Fonts.regular,
@@ -210,7 +207,7 @@ const styles = StyleSheet.create({
   },
   actionButton: {
     height: 44,
-    borderRadius: ROUNDED_MD,
+    borderRadius: '6px',
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: Spacing.half,
